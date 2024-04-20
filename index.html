@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="mediaqueries.css"/>
+</head>
+<body>
+<nav id="desktop-nav">
+    <div class="logo">MJZL</div>
+    <div>
+        <ul class="nav-links">
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#experience">Experiences</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<nav id="second-nav">
+    <div class="logo">MJZL</div>
+    <div class="secondnav-menu">
+    <div class="secondnav-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experiences</a></li>
+        <li><a href="#project" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+    </div>
+  </div>
+</nav>
+
+<section id="profile">
+    <div class="section__pic-container">
+        <img src="./images/MJZL.png" alt="MJZL profile picture">
+    </div>
+    <div class="section__text">
+        <p class="section__text__p1">Hello, I am</p>
+        <h1 class="title">Marvin Jhandrei Legaspi</h1>
+        <p class="section__text__p2">I am a Graphic Designer & Front-End Web Developer</p>
+        <div class="btn-container">
+            <button class="btn btn-color-1" onclick="location.href='#contact'">
+            Contact Info
+            </button>
+        </div>
+        <div id="social-container">
+
+            <img src="./images/twitter.png" alt="My Facebook Page" class="icon"
+            onclick="location.href='https://twitter.com/drei_1016'"/>
+
+            <img src="./images/instagram.png" alt="My Facebook Page" class="icon"
+            onclick="location.href='https://www.instagram.com/mrvnjhd/?hl=en'"/>
+        </div>
+    </div>
+</section>
+
+<section id="about">
+    <p class="section__text__p1">Get to know more</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+        <div class="section__pic-container">
+            <img src="./images/MJZL1.png" alt="ProfilePicture2"
+            class="about-pic"/>            
+        </div>
+        <div class="about-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <img src="./images/medal.png" alt="experience icon" 
+                    class="icon"/>
+                    <h3>My Experience</h3>            
+                    <p>Moderate Graphic Designer<br /> 2 Half Years Knowledge in Web Development</p>
+                </div>
+                <div class="details-container">
+                    <img src="./images/project.png" alt="project icon"
+                    class="icon"/>
+                    <h3>Past Projects</h3>            
+                    <p>Hotel Reservation Management System<br />
+                    Online Student Ordering System<br /></p>
+                </div>
+            </div>
+            <div class="text-container">
+                <p><h3>Hi! My name is Marvin Jhandrei Z. Legaspi, major in Graphic Designing and
+                Front-End Web Development, my skills are not good when it comes to Programming or Coding but
+                a fully dedicated learner when it comes to graphic designs or web designs, do not
+                expect much from me because I'm still at beginner level in coding, I will learn more
+                about Graphic Designing and develop more skills and knowledge on Programming.
+                </h3></p>
+            </div>
+        </div>
+    </div>
+    <img src="./images/arrow.png" alt="arrow icon" class="icon arrow" 
+    onclick="location.href='#experience'"/>
+</section>
+
+<section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Experiences</h1>
+    <div class="experience-details-container">
+        <div class="about-containers">
+            <div class="details-container">
+                <h2 class="experience-sub-title">Web Development</h2>
+                <div class="article-container">
+                    <article>
+                        <img src="./images/mark.png" alt="experience icon" 
+                        class="icon"/>
+                        <div>
+                        <h2>HTML</h2>
+                        <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./images/mark.png" alt="experience icon" 
+                        class="icon"/>
+                        <div>
+                        <h2>CSS</h2>
+                        <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./images/mark.png" alt="experience icon" 
+                        class="icon"/>
+                        <div>
+                        <h2>Javascript</h2>
+                        <p>Basic</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="details-container">
+                <h2 class="experience-sub-title">Other Programming Languages</h2>
+                <div class="article-container">
+                    <article>
+                        <img src="./images/mark.png" alt="experience icon" 
+                        class="icon"/>
+                        <div>
+                        <h2>Apache Netbeans</h2>
+                        <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./images/mark.png" alt="experience icon" 
+                        class="icon"/>
+                        <div>
+                        <h2>C#</h2>
+                        <p>Basic</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./images/mark.png" alt="experience icon" 
+                        class="icon"/>
+                        <div>
+                        <h2>C++</h2>
+                        <p>Basic</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img src="./images/arrow.png" alt="arrow icon" class="icon arrow" 
+    onclick="location.href='#project'"/>
+</section>
+
+<section id="project">
+    <p class="section__text__p1">See my Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+        <div class="about-containers">
+        <div class="details-container color-container">
+                <div class="article-container">
+                <img src="./images/project1.png" alt="project 1"
+                class="project.img"/>
+            </div>
+            <h2 class="experience-sub-title project-title">Online Student Ordering System</h2>
+            <!-- <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" 
+                onclick="location.href=''">Github</button>
+
+                <button class="btn btn-color-2 project-btn" 
+                onclick="location.href=''">Live Demo</button>
+            </div> -->     
+        </div>
+        <div class="details-container color-container">
+            <div class="article-container">
+                <img src="./images/project2.png" alt="project 2"
+                class="project.img"/>
+            </div>
+            <h2 class="experience-sub-title project-title">TULL Hotel Reservation</h2>
+            <!-- <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" 
+                onclick="location.href=''">Github</button>
+
+                <button class="btn btn-color-2 project-btn" 
+                onclick="location.href=''">Live Demo</button>
+            </div> --> 
+        </div>
+        <!--  <div class="details-container color-container">
+            <div class="article-container">
+                <img src="./images/project2.png" alt="project 3"
+                class="project.img"/>
+            </div>
+            <h2 class="experience-sub-title project-title">TULL Hotel Reservation</h2> -->
+            
+            <!-- <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" 
+                onclick="location.href=''">Github</button>
+
+                <button class="btn btn-color-2 project-btn" 
+                onclick="location.href=''">Live Demo</button>
+            </div> --> 
+        </div>
+    </div>
+  </div>
+  <img src="./images/arrow.png" alt="arrow icon" class="icon arrow" 
+  onclick="location.href='#contact'"/>    
+</section>
+
+<section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me in:</h1>
+    <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+            <img src="./images/email.png" alt="Email icon"
+            class="icon contact-icon"/>
+            <p><a href="mailto:marvinlegaspi1016@gmail.com">
+            marvinlegaspi1016@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+            <img src="./images/facebook.png" alt="Facebook icon" 
+            class="icon contact-icon"/>
+            <p><a href="https://www.facebook.com/jhandrei.legaspi">
+            Facebook</a></p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <nav>
+        <div class="nav-links-container">
+            <ul class="nav-links">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#experience">Experiences</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <p>Copyright &#169; 2024 MJZL. All Right Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
